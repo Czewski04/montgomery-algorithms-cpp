@@ -1,0 +1,3 @@
+C:/Users/wikto/CLionProjects/montgomeryAlgorithms/cmake-build-debug/CMakeFiles/montgomeryAlgorithms.dir
+C:/Users/wikto/CLionProjects/montgomeryAlgorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/wikto/CLionProjects/montgomeryAlgorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
