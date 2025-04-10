@@ -20,7 +20,7 @@ public:
     int nwd(int a, int b);
     int searchR(int m);
     int mInverse(int r, int m);
-    int redc(int r, int m);
+    int rInverse(int r, int m);
     int pow(int a, int b);
 };
 

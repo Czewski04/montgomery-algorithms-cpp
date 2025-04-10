@@ -41,7 +41,7 @@ int MontgomeryApp::monPro(int a, int b, int m) {
     z = z>>k;
     if (z>=m)   z = z-m;
         std::cout<<"z: "<<z<<"\n";
-    result = redc(r, m);
+    result = rInverse(r, m);
         std::cout<<"r^-1: "<<result<<"\n";
     result = z*result%m;
     return result;
@@ -93,7 +93,7 @@ int MontgomeryApp::mInverse(int R, int m) {
     return (R - t0) % R;
 }
 
-int MontgomeryApp::redc(int r, int m) {
+int MontgomeryApp::rInverse(int r, int m) {
     int m0 = m;
     int x0 = 0, x1 = 1;
 
