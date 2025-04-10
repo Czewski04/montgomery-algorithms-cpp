@@ -10,7 +10,7 @@
 
 void MontgomeryApp::runApp() {
     int result = 0;
-    result = monPro(1711,50,417);
+    result = monPro(8,13,19);
     std::cout<<"Ostateczny wynik: "<<result<<"\n";
 }
 
@@ -27,10 +27,12 @@ int MontgomeryApp::monPro(int a, int b, int m) {
     int r = pow(2,k);
         std::cout<<"r: "<<r<<"\n";
     aPrim = (a*r)%m;
+        std::cout<<"aPrim: "<<aPrim<<"\n";
     bPrim = (b*r)%m;
+        std::cout<<"bPrim: "<<bPrim<<"\n";
     t = aPrim*bPrim;
         std::cout<<"t: "<<t<<"\n";
-    mPrim = mInverse(m, r);
+    mPrim = mInverse(r, m);
         std::cout<<"m': "<<mPrim<<"\n";
     u = (t*mPrim);
     u = u&(r-1);
@@ -65,7 +67,7 @@ int MontgomeryApp::searchR(int m) {
     return k;
 }
 
-int MontgomeryApp::mInverse(int m, int R) {
+int MontgomeryApp::mInverse(int R, int m) {
     int r0 = R, r1 = m;
     int t0 = 0, t1 = 1;
 

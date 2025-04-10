@@ -10,4 +10,5 @@ include_directories(
 add_executable(montgomeryAlgorithms
         src/main.cpp
         src/app/MontgomeryApp.cpp
+        src/app/MontProImpl.cpp
     )

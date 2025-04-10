@@ -63,6 +63,13 @@ build CMakeFiles/montgomeryAlgorithms.dir/src/app/MontgomeryApp.cpp.obj: CXX_COM
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
 
+build CMakeFiles/montgomeryAlgorithms.dir/src/app/MontProImpl.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/MontProImpl.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
+  DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\MontProImpl.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
+  OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
+  OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target montgomeryAlgorithms
@@ -71,7 +78,7 @@ build CMakeFiles/montgomeryAlgorithms.dir/src/app/MontgomeryApp.cpp.obj: CXX_COM
 #############################################
 # Link the executable montgomeryAlgorithms.exe
 
-build montgomeryAlgorithms.exe: CXX_EXECUTABLE_LINKER__montgomeryAlgorithms_Debug CMakeFiles/montgomeryAlgorithms.dir/src/Main.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/MontgomeryApp.cpp.obj
+build montgomeryAlgorithms.exe: CXX_EXECUTABLE_LINKER__montgomeryAlgorithms_Debug CMakeFiles/montgomeryAlgorithms.dir/src/Main.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/MontgomeryApp.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/MontProImpl.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
