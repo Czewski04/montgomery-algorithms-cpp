@@ -2,7 +2,7 @@
 // Created by wiktor on 10.04.2025.
 //
 
-#include "../../include/app/MontProImpl.h"
+#include "../../include/app2/MontProImpl.h"
 
 #include <cstdio>
 #include <iostream>
