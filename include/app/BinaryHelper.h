@@ -8,7 +8,7 @@
 #include <vector>
 
     // Dodawanie z przeniesieniem
-    std::pair<int, int> addc(int a, int b, int c = 0);
+    std::pair<int, int> addc(int a, int b, int c);
 
     // Propagowanie przeniesienia
     std::vector<int> propagate_carry(std::vector<int> bits, int start, int carry);

@@ -9,7 +9,7 @@
 #include <utility>
 
 // Dodawanie z przeniesieniem
-std::pair<int, int> addc(int a, int b, int c = 0) {
+std::pair<int, int> addc(int a, int b, int c) {
     int ab = a + b + c;
     if (ab >= 2) {
         c = 1;
@@ -54,14 +54,13 @@ std::vector<int> intToBin(int n) {
         binaryVector.push_back(n % 2);
         n /= 2;
     }
-    std::reverse(binaryVector.begin(), binaryVector.end());
     return binaryVector;
 }
 
 std::vector<int> fillBinary(std::vector<int> n, int s) {
     if (n.size() < s) {
         int zerosToAdd = s - n.size();
-        n.insert(n.begin(), zerosToAdd, 0);
+        n.insert(n.end(), zerosToAdd, 0);
     }
     return n;
 }
