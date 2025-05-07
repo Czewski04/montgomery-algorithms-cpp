@@ -15,4 +15,6 @@ add_executable(montgomeryAlgorithms
         src/app/PrepareMon.cpp
         src/app/MonPro.cpp
         src/app/ModExp.cpp
+        src/app/BinaryHelper.cpp
+        src/app/CihsMethod.cpp
     )
