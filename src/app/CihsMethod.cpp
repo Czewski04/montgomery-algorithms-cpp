@@ -4,6 +4,7 @@
 
 #include "../../include/app/CihsMethod.h"
 
+#include <cmath>
 #include <iostream>
 #include <ostream>
 
@@ -29,7 +30,7 @@ std::vector<int> Cihs(std::vector<int> ap_bin,std::vector<int> bp_bin,std::vecto
     }
 
     for (int i=0; i<s; i++) {
-        int m = t[0]*np[0] % w;
+        int m = t[0]*np[0] % (int)std::pow(2,w);
         int carry = 0, sum = 0;
         std::tie(carry, sum) = addc(t[0], m*n_bin[0], 0);
         for (int j=1; j<s; j++) {
@@ -48,6 +49,11 @@ std::vector<int> Cihs(std::vector<int> ap_bin,std::vector<int> bp_bin,std::vecto
             t[s+1] = carry;
         }
     }
+
+    for (int i=0; i<s; i++) {
+        u[i] = t[i+s];
+    }
+
     int borrow = 0, diff = 0;
     for (int i=0; i<s; i++) {
         std::tie(borrow, diff) = subc(u[i], n_bin[i], borrow);
@@ -71,7 +77,7 @@ std::vector<int> CihsExp(int a, int e, int n, int w=1) {
     int up = (1*r)%n;
     std::vector<int> upBin = intToBin(up);
     upBin = fillBinary(upBin, s);
-    std::vector<int> nBin = intToBin(up);
+    std::vector<int> nBin = intToBin(n);
     for (int i=k-1; i>=0; i--) {
         upBin = Cihs(upBin, upBin, nBin, npBin, s, w);
         if ((e>>i)&1) {
@@ -80,5 +86,6 @@ std::vector<int> CihsExp(int a, int e, int n, int w=1) {
     }
     std::vector<int> t1(s, 0);
     t1[0] = 1;
-    return Cihs(upBin, t1, nBin, npBin, s, w);
+    std::vector<int> ret = Cihs(upBin, t1, nBin, npBin, s, w);
+    return ret;
 }
