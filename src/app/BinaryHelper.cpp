@@ -24,9 +24,7 @@ std::pair<int, int> addc(int a, int b, int c) {
 std::vector<int> propagate_carry(std::vector<int> bits, int start, int carry) {
     int i = start;
     while (carry > 0 && i < bits.size()) {
-        auto [new_carry, result_bit] = addc(bits[bits.size() - 1 - i], carry, 0);
-        bits[bits.size() - 1 - i] = result_bit;
-        carry = new_carry;
+        std::tie(carry, bits[i]) = addc(bits[i], carry, 0);
         i++;
     }
     return bits;

@@ -56,6 +56,6 @@ std::tuple<int, int, int> prepareMontgomery(int n) {
     else
         np = -((np_tmp - n + 1) / n);
 
-    std::cout << k << " " << r << " " << r_inv << " " << np << std::endl;
+    //std::cout << k << " " << r << " " << r_inv << " " << np << std::endl;
     return std::make_tuple(k, r, np);
 }

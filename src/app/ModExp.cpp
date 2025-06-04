@@ -17,7 +17,6 @@ int modExp(int a, int e, int n) {
     // Pętla potęgowania
     for (int i = k - 1; i >= 0; --i) {
         up = monPro(up, up, n, r, np);
-
         if ((e >> i) & 1) {
             up = monPro(up, ap, n, r, np);
         }
