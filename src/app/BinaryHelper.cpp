@@ -21,10 +21,21 @@ std::pair<int, int> addc(int a, int b, int c) {
 }
 
 // Propagowanie przeniesienia
-std::vector<int> propagate_carry(std::vector<int> bits, int start, int carry) {
+std::vector<int> propagateCarry(std::vector<int> bits, int start, int carry) {
     int i = start;
     while (carry > 0 && i < bits.size()) {
         std::tie(carry, bits[i]) = addc(bits[i], carry, 0);
+        i++;
+    }
+    return bits;
+}
+
+// Propagowanie przeniesienia
+std::vector<int> propagateCarryInverted(std::vector<int> bits, int start, int carry) {
+    int i = start;
+    int bSize = bits.size();
+    while (carry > 0 && i < bits.size()) {
+        std::tie(carry, bits[bSize-1 - i]) = addc(bits[bSize-1 - i], carry, 0);
         i++;
     }
     return bits;

@@ -11,7 +11,10 @@
     std::pair<int, int> addc(int a, int b, int c);
 
     // Propagowanie przeniesienia
-    std::vector<int> propagate_carry(std::vector<int> bits, int start, int carry);
+    std::vector<int> propagateCarry(std::vector<int> bits, int start, int carry);
+
+    // Propagowanie przeniesienia
+    std::vector<int> propagateCarryInverted(std::vector<int> bits, int start, int carry);
 
     // Odejmowanie z pożyczką
     std::pair<int, int> subc(int x, int y, int borrow);
