@@ -52,56 +52,56 @@ build cmake_object_order_depends_target_montgomeryAlgorithms: phony || .
 build CMakeFiles/montgomeryAlgorithms.dir/src/Main.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/Main.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
   DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\Main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src
-
-build CMakeFiles/montgomeryAlgorithms.dir/src/app2/MontgomeryApp.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app2/MontgomeryApp.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
-  DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app2\MontgomeryApp.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
-  OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
-  OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app2
-
-build CMakeFiles/montgomeryAlgorithms.dir/src/app2/MontProImpl.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app2/MontProImpl.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
-  DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app2\MontProImpl.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
-  OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
-  OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app2
 
 build CMakeFiles/montgomeryAlgorithms.dir/src/app/PrepareMon.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/PrepareMon.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
   DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\PrepareMon.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
 
 build CMakeFiles/montgomeryAlgorithms.dir/src/app/MonPro.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/MonPro.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
   DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\MonPro.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
 
 build CMakeFiles/montgomeryAlgorithms.dir/src/app/ModExp.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/ModExp.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
   DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\ModExp.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
 
 build CMakeFiles/montgomeryAlgorithms.dir/src/app/BinaryHelper.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/BinaryHelper.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
   DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\BinaryHelper.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
 
 build CMakeFiles/montgomeryAlgorithms.dir/src/app/CihsMethod.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/CihsMethod.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
   DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\CihsMethod.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app2
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
+  OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
+  OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
+
+build CMakeFiles/montgomeryAlgorithms.dir/src/app/FipsMethod.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/FipsMethod.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
+  DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\FipsMethod.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
+  OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
+  OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
+
+build CMakeFiles/montgomeryAlgorithms.dir/src/app/Cios.cpp.obj: CXX_COMPILER__montgomeryAlgorithms_unscanned_Debug C$:/Users/wikto/CLionProjects/montgomeryAlgorithms/src/app/Cios.cpp || cmake_object_order_depends_target_montgomeryAlgorithms
+  DEP_FILE = CMakeFiles\montgomeryAlgorithms.dir\src\app\Cios.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/wikto/CLionProjects/montgomeryAlgorithms/include/app
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir
   OBJECT_FILE_DIR = CMakeFiles\montgomeryAlgorithms.dir\src\app
 
@@ -113,7 +113,7 @@ build CMakeFiles/montgomeryAlgorithms.dir/src/app/CihsMethod.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable montgomeryAlgorithms.exe
 
-build montgomeryAlgorithms.exe: CXX_EXECUTABLE_LINKER__montgomeryAlgorithms_Debug CMakeFiles/montgomeryAlgorithms.dir/src/Main.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app2/MontgomeryApp.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app2/MontProImpl.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/PrepareMon.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/MonPro.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/ModExp.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/BinaryHelper.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/CihsMethod.cpp.obj
+build montgomeryAlgorithms.exe: CXX_EXECUTABLE_LINKER__montgomeryAlgorithms_Debug CMakeFiles/montgomeryAlgorithms.dir/src/Main.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/PrepareMon.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/MonPro.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/ModExp.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/BinaryHelper.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/CihsMethod.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/FipsMethod.cpp.obj CMakeFiles/montgomeryAlgorithms.dir/src/app/Cios.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\montgomeryAlgorithms.dir

@@ -3,6 +3,8 @@
 //
 
 #include "../../include/app/PrepareMon.h"
+
+#include <cmath>
 #include <iostream>
 #include <tuple>
 
@@ -59,3 +61,15 @@ std::tuple<int, int, int> prepareMontgomery(int n) {
     //std::cout << k << " " << r << " " << r_inv << " " << np << std::endl;
     return std::make_tuple(k, r, np);
 }
+//
+// long long floor_div(long long numerator, long long denominator) {
+//     long long result = numerator / denominator;
+//     // Jeśli wynik dzielenia C++ jest ujemny i ma część ułamkową (tj. nie jest to idealne dzielenie)
+//     // To oznacza, że C++ obciął w kierunku zera, a my chcemy zaokrąglić w dół.
+//     // Dzieje się to, gdy licznik i mianownik mają różne znaki, A reszta z dzielenia jest niezerowa.
+//     if ((numerator % denominator != 0) &&
+//         ((numerator < 0) != (denominator < 0))) { // Sprawdza, czy znaki są różne
+//         result--; // Zmniejsza wynik o 1, aby zaokrąglić w dół
+//         }
+//     return result;
+// }

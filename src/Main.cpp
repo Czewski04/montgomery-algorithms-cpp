@@ -10,6 +10,7 @@
 int main() {
     int a = 13, e = 21, n = 19;
     //int a = 7, e = 10, n = 13;
+    //int a = 12345, e = 32767, n = 65521;
 
     int result = modExp(a, e, n);
     std::cout << "Wynik MonPro: "<<result <<"\n";
