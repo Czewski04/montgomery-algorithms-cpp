@@ -19,7 +19,7 @@
     // Odejmowanie z pożyczką
     std::pair<int, int> subc(int x, int y, int borrow);
 
-    std::vector<int> intToBin(int n);
+    std::vector<int> intToBin(__int128 n);
 
     std::vector<int> fillBinary(std::vector<int> n, int s);
 

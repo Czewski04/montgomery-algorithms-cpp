@@ -6,18 +6,19 @@
 #include "Cios.h"
 #include "ModExp.h"
 #include "FipsMethod.h"
+#include "Int128ToStr.h"
 
 int main() {
-    int a = 13, e = 21, n = 19;
+    //int a = 13, e = 21, n = 19;
     //int a = 7, e = 10, n = 13;
-    //int a = 12345, e = 32767, n = 65521;
+    __int128 a = stringToInt128("10436");
+    __int128 e = stringToInt128("23012");
+    __int128 n = stringToInt128("15751");
 
-    int result = modExp(a, e, n);
-    std::cout << "Wynik MonPro: "<<result <<"\n";
+    __int128 result = modExp(a, e, n);
+    std::cout << "Wynik MonPro: "<<int128ToString(result) <<"\n";
 
-    std::vector<int> resultCihs;
-    double cihsTime;
-    std::tie(resultCihs, cihsTime) = CihsExp(a,e,n,1);
+    auto [resultCihs, cihsTime] = CihsExp(a,e,n,1);
     std::cout << "Wynik cichs: " <<"\n";
     for (int i : resultCihs) {
         std::cout << i;
@@ -25,9 +26,7 @@ int main() {
     std::cout << "\n";
     std::cout << "Czas: " << cihsTime << "\n";
 
-    std::vector<int> resultFips;
-    double fipsTime;
-    std::tie(resultFips, fipsTime) = FipsExp(a,e,n,1);
+    auto [resultFips, fipsTime] = FipsExp(a,e,n,1);
     std::cout << "Wynik fips: " <<"\n";
     for (int i : resultFips) {
         std::cout << i;

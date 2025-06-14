@@ -60,17 +60,17 @@ std::vector<int> Cihs(std::vector<int> ap_bin,std::vector<int> bp_bin,std::vecto
     return t;
 }
 
-std::tuple<std::vector<int>, double> CihsExp(int a, int e, int n, int w=1) {
+std::tuple<std::vector<int>, double> CihsExp(__int128 a, __int128 e, __int128 n, int w=1) {
     auto [k, r, np] = prepareMontgomery(n);
     int s = k/w;
 
     std::vector<int> npBin = intToBin(np);
 
-    int ap = (a*r)%n;
+    __int128 ap = (a*r)%n;
     std::vector<int> apBin = intToBin(ap);
     apBin = fillBinary(apBin, s);
 
-    int up = (1*r)%n;
+    __int128 up = (1*r)%n;
     std::vector<int> upBin = intToBin(up);
     upBin = fillBinary(upBin, s);
 

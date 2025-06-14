@@ -8,18 +8,18 @@
 #include <ostream>
 
 // Funkcja wykonująca mnożenie Montgomery'ego
-int monPro(int ap, int bp, int n, int r, int np) {
-    long long t = static_cast<long long>(ap) * bp;  // używamy long long dla bezpieczeństwa
+__int128 monPro(__int128 ap, __int128 bp, __int128 n, __int128 r, __int128 np) {
+    __int128 t = (ap) * bp;  // używamy __int128 dla bezpieczeństwa
     //std::cout << "t = " << t << " = " << ap << " * " << bp << std::endl;
-    long long m = (t * np) % r;
+    __int128 m = (t * np) % r;
     if (m < 0) m += r;
     //std::cout << "m = " << m << " = " << t << " * " << np << " % " << r << std::endl;;
-    long long u = (t + m * n) / r;
+    __int128 u = (t + m * n) / r;
     //std::cout << "u = " << u << " = " << t << " + " << m << " * " << n << " // " << r << std::endl;
 
     if (u >= n) {
-        return static_cast<int>(u - n);
+        return u - n;
     }
 
-    return static_cast<int>(u);
+    return u;
 }

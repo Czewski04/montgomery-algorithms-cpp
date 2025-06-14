@@ -5,7 +5,7 @@
 #ifndef MONPRO_H
 #define MONPRO_H
 
- int monPro(int ap, int bp, int n, int r, int np);
+ __int128 monPro(__int128 ap, __int128 bp, __int128 n, __int128 r, __int128 np);
 
 #endif
 

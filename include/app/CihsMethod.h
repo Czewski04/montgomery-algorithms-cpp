@@ -7,7 +7,7 @@
 #include <vector>
 
 std::vector<int> Cihs(int ap_bin,int bp_bin,int n_bin,int np,int s,int w=1);
-std::tuple<std::vector<int>, double> CihsExp(int a, int e, int n, int w);
+std::tuple<std::vector<int>, double> CihsExp(__int128 a, __int128 e, __int128 n, int w);
 
 
 #endif //CIHSMETHOD_H

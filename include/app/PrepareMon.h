@@ -7,7 +7,7 @@
 
 #include <tuple>
 
-std::tuple<int, int, int> prepareMontgomery(int n);
-long long floor_div(long long numerator, long long denominator);
+std::tuple<int, __int128, __int128> prepareMontgomery(__int128 n);
+__int128 floor_div(__int128 numerator, __int128 denominator);
 
 #endif

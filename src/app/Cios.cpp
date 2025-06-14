@@ -58,24 +58,26 @@ std::vector<int> Cios(std::vector<int> ap_bin, std::vector<int> bp_bin, std::vec
     return u;
 }
 
-std::vector<int> CiosExp(int a, int e, int n, int w) {
+std::vector<int> CiosExp(__int128 a, __int128 e, __int128 n, int w) {
     auto [k, r, np] = prepareMontgomery(n);
     int s = k/w;
 
-    std::vector<int> npBin = intToBin(np);
-    std::reverse(npBin.begin(), npBin.end());
 
-    int ap = (a*r)%n;
+    std::vector<int> npBin = intToBin(np);
+
+    __int128 ap = (a*r)%n;
     std::vector<int> apBin = intToBin(ap);
     apBin = fillBinary(apBin, s);
-    std::reverse(apBin.begin(), apBin.end());
 
-    int up = (1*r)%n;
+    __int128 up = (1*r)%n;
     std::vector<int> upBin = intToBin(up);
     upBin = fillBinary(upBin, s);
-    std::reverse(upBin.begin(), upBin.end());
 
     std::vector<int> nBin = intToBin(n);
+
+    std::reverse(npBin.begin(), npBin.end());
+    std::reverse(apBin.begin(), apBin.end());
+    std::reverse(upBin.begin(), upBin.end());
     std::reverse(nBin.begin(), nBin.end());
 
     for (int i=k-1; i>=0; i--) {

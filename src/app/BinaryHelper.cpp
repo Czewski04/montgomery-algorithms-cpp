@@ -2,7 +2,7 @@
 // Created by wiktor on 07.05.2025.
 //
 
-#include "../../include/app/BinaryHelper.h"
+#include "BinaryHelper.h"
 
 #include <algorithm>
 #include <vector>
@@ -53,7 +53,7 @@ std::pair<int, int> subc(int x, int y, int borrow) {
     return {borrow, diff};
 }
 
-std::vector<int> intToBin(int n) {
+std::vector<int> intToBin(__int128 n) {
     std::vector<int> binaryVector;
     if (n == 0) {
         binaryVector.push_back(0);

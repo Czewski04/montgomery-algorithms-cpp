@@ -7,6 +7,6 @@
 #include <vector>
 
 std::vector<int> Cios(int ap_bin,int bp_bin,int n_bin,int np,int s,int w=1);
-std::vector<int> CiosExp(int a, int e, int n, int w);
+std::vector<int> CiosExp(__int128 a, __int128 e, __int128 n, int w);
 
 #endif //CIOS_H
