@@ -2,13 +2,27 @@
 // Created by wiktor on 24.04.2025.
 //
 
-#include "../../include/app/ModExp.h"
-#include <iostream>
-#include <tuple>
+#include "../../include/app/BasicMontgomery.h"
 
-#include "Int128ToStr.h"
-#include "MonPro.h"
+#include <iostream>
+#include <ostream>
+
+#include "Int128Conversions.h"
 #include "PrepareMon.h"
+
+// Funkcja wykonująca mnożenie Montgomery'ego
+__int128 monPro(__int128 ap, __int128 bp, __int128 n, __int128 r, __int128 np) {
+    __int128 t = (ap) * bp;
+    __int128 m = (t * np) % r;
+    if (m < 0) m += r;
+    __int128 u = (t + m * n) / r;
+
+    if (u >= n) {
+        return u - n;
+    }
+
+    return u;
+}
 
 // Funkcja obliczająca a^e mod n za pomocą Montgomery'ego
 __int128 modExp(__int128 a, __int128 e, __int128 n) {

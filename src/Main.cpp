@@ -2,42 +2,55 @@
 #include <iostream>
 #include <vector>
 
+#include "BasicMontgomery.h"
 #include "CihsMethod.h"
 #include "Cios.h"
-#include "ModExp.h"
 #include "FipsMethod.h"
-#include "Int128ToStr.h"
+#include "Int128Conversions.h"
+#include "RandomNumbersGenerator.h"
 
 int main() {
-    //int a = 13, e = 21, n = 19;
-    //int a = 7, e = 10, n = 13;
-    __int128 a = stringToInt128("10436");
-    __int128 e = stringToInt128("23012");
-    __int128 n = stringToInt128("15751");
+    double sumOfCihsTime = 0;
+    double sumOfFipsTime = 0;
+    int numberOfTests = 100;
+    int numberOfBits = 54;
+    for (int i=0; i<numberOfTests; i++) {
+        auto[a,e,n] = generateRandomNumbers(numberOfBits);
 
-    __int128 result = modExp(a, e, n);
-    std::cout << "Wynik MonPro: "<<int128ToString(result) <<"\n";
+        // std::cout << "a: " << int128ToString(a) << "\n";
+        // std::cout << "e: " << int128ToString(e) << "\n";
+        // std::cout << "n: " << int128ToString(n) << "\n";
 
-    auto [resultCihs, cihsTime] = CihsExp(a,e,n,1);
-    std::cout << "Wynik cichs: " <<"\n";
-    for (int i : resultCihs) {
-        std::cout << i;
+        // __int128 result = modExp(a, e, n);
+        // std::cout << "Wynik MonPro: "<<int128ToString(result) <<"\n";
+
+        auto [resultCihs, cihsTime] = CihsExp(a,e,n,1);
+        std::cout << "Wynik cichs: " <<"\n";
+        for (int j : resultCihs) {
+            std::cout << j;
+        }
+        std::cout << "\n";
+        std::cout << "Czas: " << cihsTime << "\n";
+        sumOfCihsTime += cihsTime;
+
+        auto [resultFips, fipsTime] = FipsExp(a,e,n,1);
+        std::cout << "Wynik fips: " <<"\n";
+        for (int j : resultFips) {
+            std::cout << j;
+        }
+        std::cout << "\n";
+        std::cout << "Czas: " << fipsTime << "\n";
+        sumOfFipsTime += fipsTime;
+
+        // std::vector<int> resultCios = CiosExp(a,e,n,1);
+        // std::cout << "Wynik cios: " <<"\n";
+        // for (int j : resultCios) {
+        //     std::cout << j;
+        // }
     }
-    std::cout << "\n";
-    std::cout << "Czas: " << cihsTime << "\n";
+    std::cout << "\nLiczba bitow: " << numberOfBits << "\n";
+    std::cout << "Sredni czas Cihs: " << sumOfCihsTime / 50 << "\n";
+    std::cout << "Sredni czas Fips: " << sumOfFipsTime / 50 << "\n";
 
-    auto [resultFips, fipsTime] = FipsExp(a,e,n,1);
-    std::cout << "Wynik fips: " <<"\n";
-    for (int i : resultFips) {
-        std::cout << i;
-    }
-    std::cout << "\n";
-    std::cout << "Czas: " << fipsTime << "\n";
-
-    std::vector<int> resultCios = CiosExp(a,e,n,1);
-    std::cout << "Wynik cios: " <<"\n";
-    for (int i : resultCios) {
-        std::cout << i;
-    }
     return 0;
 }

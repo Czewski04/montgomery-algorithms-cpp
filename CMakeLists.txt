@@ -10,11 +10,11 @@ include_directories(
 add_executable(montgomeryAlgorithms
         src/main.cpp
         src/app/PrepareMon.cpp
-        src/app/MonPro.cpp
-        src/app/ModExp.cpp
         src/app/BinaryHelper.cpp
         src/app/CihsMethod.cpp
         src/app/FipsMethod.cpp
         src/app/Cios.cpp
-        src/app/int128ToStr.cpp
+        src/app/int128Conversions.cpp
+        src/app/RandomNumbersGenerator.cpp
+        src/app/BasicMontgomery.cpp
 )

@@ -7,7 +7,11 @@
 
 #include <tuple>
 
+// Funkcje do przygotowania parametrów dla algorytmu Montgomery'ego
 std::tuple<int, __int128, __int128> prepareMontgomery(__int128 n);
-__int128 floor_div(__int128 numerator, __int128 denominator);
+// Rozszerzony algorytm Euklidesa
+__int128 gcdExtended(__int128 a, __int128 b);
+// Obliczenie odwrotności modularnej
+__int128 modInverse(__int128 r, __int128 n);
 
 #endif

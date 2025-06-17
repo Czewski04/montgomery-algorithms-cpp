@@ -8,6 +8,8 @@
 #include <iostream>
 #include <tuple>
 
+#include "Int128Conversions.h"
+
 // Zmienne globalne
 __int128 x, y;
 
@@ -50,14 +52,10 @@ std::tuple<int, __int128, __int128> prepareMontgomery(__int128 n) {
     }
 
     __int128 r = (__int128)1 << k;
-    __int128 r_inv = modInverse(r, n);
-    __int128 np_tmp = 1 - r * r_inv;
-    __int128 np;
-    if (np_tmp >= 0)
-        np = -(np_tmp / n);  // zaokrąglenie w dół
-    else
-        np = -((np_tmp - n + 1) / n);
-
-    //std::cout << k << " " << r << " " << r_inv << " " << np << std::endl;
+    __int128 rInv = modInverse(r, n);
+    __int128 npTmp = 1 - r * rInv;
+    //std::cout<<int128ToString(np_tmp) << "\n";
+    __int128 np = -(npTmp / n);
+    //std::cout << int128ToString(k) << " r: " << int128ToString(r) << " r_inv: " << int128ToString(r_inv) << " " << int128ToString(np) << std::endl;
     return std::make_tuple(k, r, np);
 }

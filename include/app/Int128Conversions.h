@@ -6,6 +6,7 @@
 #define INT128TOSTR_H
 #include <string>
 
+// Funkcje do konwersji __int128 na string i odwrotnie
 std::string int128ToString(__int128 val);
 __int128 stringToInt128(const std::string& s);
 

@@ -1,4 +1,4 @@
-#include "int128ToStr.h"
+#include "Int128Conversions.h"
 #include <algorithm>
 #include <string>
 //
@@ -10,16 +10,16 @@ std::string int128ToString(__int128 val) {
     bool negative = false;
     if (val < 0) {
         negative = true;
-        val = -val; // Konwertujemy na dodatnią do konwersji
+        val = -val;
     }
     while (val > 0) {
-        s += (val % 10) + '0'; // Dodajemy cyfrę do stringa
+        s += (val % 10) + '0';
         val /= 10;
     }
     if (negative) {
         s += '-';
     }
-    std::reverse(s.begin(), s.end()); // Odwracamy string, bo budowaliśmy go od tyłu
+    std::reverse(s.begin(), s.end());
     return s;
 }
 

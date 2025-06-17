@@ -10,17 +10,7 @@
 #include <algorithm>
 #include <chrono>
 #include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
-#include <tuple>
+
 
 std::vector<int> Fips(std::vector<int> ap_bin, std::vector<int> bp_bin, std::vector<int> n_bin, std::vector<int> np, int s, int w) {
     std::vector<int> t(3, 0);
