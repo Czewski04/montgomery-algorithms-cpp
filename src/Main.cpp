@@ -1,13 +1,9 @@
-
-#include <iostream>
-#include <vector>
-
 #include "BasicMontgomery.h"
 #include "CihsMethod.h"
-#include "Cios.h"
 #include "FipsMethod.h"
 #include "Int128Conversions.h"
 #include "RandomNumbersGenerator.h"
+#include <iostream>
 
 void testing();
 void runMon();
