@@ -1,14 +1,10 @@
-//
-// Created by wiktor on 17.06.2025.
-//
-
 #include "RandomNumbersGenerator.h"
 #include <random>
-
 
 std::random_device rd;
 std::mt19937_64 engine(rd());
 
+// Generowanie losowej liczby __int128 o zadanej liczbie bitów
 __int128 generateRandomBits(int bits) {
     unsigned long long minVal;
     unsigned long long maxVal;
@@ -29,6 +25,7 @@ __int128 generateRandomBits(int bits) {
     return static_cast<__int128>(dist(engine));
 }
 
+// Generowanie trzech losowych liczb __int128: a, e, n
 std::tuple<__int128, __int128, __int128> generateRandomNumbers(int bits) {
     __int128 n = generateRandomBits(bits);
     while (n%2==0 || n==0) {

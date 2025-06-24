@@ -1,7 +1,3 @@
-//
-// Created by wiktor on 07.05.2025.
-//
-
 #ifndef BINARYHELPER_H
 #define BINARYHELPER_H
 

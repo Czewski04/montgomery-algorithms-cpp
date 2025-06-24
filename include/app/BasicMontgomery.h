@@ -1,7 +1,3 @@
-//
-// Created by wiktor on 24.04.2025.
-//
-
 #ifndef MONPRO_H
 #define MONPRO_H
 

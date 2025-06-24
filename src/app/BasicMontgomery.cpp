@@ -1,13 +1,4 @@
-//
-// Created by wiktor on 24.04.2025.
-//
-
-#include "../../include/app/BasicMontgomery.h"
-
-#include <iostream>
-#include <ostream>
-
-#include "Int128Conversions.h"
+#include "BasicMontgomery.h"
 #include "PrepareMon.h"
 
 // Funkcja wykonująca mnożenie Montgomery'ego
@@ -27,13 +18,9 @@ __int128 monPro(__int128 ap, __int128 bp, __int128 n, __int128 r, __int128 np) {
 // Funkcja obliczająca a^e mod n za pomocą Montgomery'ego
 __int128 modExp(__int128 a, __int128 e, __int128 n) {
     auto [k, r, np] = prepareMontgomery(n);
-    std::cout<<"k: "<<int128ToString(k)<<", r: "<<int128ToString(r)<<", np: "<<int128ToString(np)<<"\n";
 
     __int128 ap = (a * r) % n;
     __int128 up = (1 * r) % n;
-
-    std::cout<<"ap: "<<int128ToString(ap)<<", up: "<<int128ToString(up)<<"\n";
-
 
     // Pętla potęgowania
     for (int i = k - 1; i >= 0; --i) {

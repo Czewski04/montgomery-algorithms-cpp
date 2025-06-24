@@ -1,13 +1,9 @@
-//
-// Created by wiktor on 07.05.2025.
-//
-
-#include <cmath>
 #include "BinaryHelper.h"
 #include "PrepareMon.h"
 #include "CihsMethod.h"
 #include <algorithm>
 #include <chrono>
+#include <cmath>
 
 std::vector<int> Cihs(std::vector<int> ap_bin,std::vector<int> bp_bin,std::vector<int> n_bin,std::vector<int> np,int s,int w=1) {
     std::vector<int> t(2 * s + 1, 0);

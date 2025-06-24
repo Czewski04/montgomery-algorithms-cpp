@@ -1,9 +1,6 @@
-//
-// Created by wiktor on 17.06.2025.
-//
-
 #ifndef RANDOMNUMBERSGENERATOR_H
 #define RANDOMNUMBERSGENERATOR_H
+
 #include <tuple>
 
 // Generowanie losowych liczb o określonej liczbie bitów

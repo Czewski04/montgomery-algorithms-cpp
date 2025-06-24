@@ -13,7 +13,6 @@ add_executable(montgomeryAlgorithms
         src/app/BinaryHelper.cpp
         src/app/CihsMethod.cpp
         src/app/FipsMethod.cpp
-        src/app/Cios.cpp
         src/app/int128Conversions.cpp
         src/app/RandomNumbersGenerator.cpp
         src/app/BasicMontgomery.cpp

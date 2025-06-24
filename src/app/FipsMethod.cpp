@@ -1,12 +1,7 @@
-//
-// Created by wiktor on 08.05.2025.
-//
-
-#include <cmath>
 #include "BinaryHelper.h"
 #include "PrepareMon.h"
 #include "FipsMethod.h"
-
+#include <cmath>
 #include <algorithm>
 #include <chrono>
 #include <tuple>

@@ -1,9 +1,8 @@
 #include "Int128Conversions.h"
 #include <algorithm>
 #include <string>
-//
-// Created by wiktor on 14.06.2025.
-//
+
+// Konwersja __int128 do string
 std::string int128ToString(__int128 val) {
     if (val == 0) return "0";
     std::string s = "";
@@ -23,6 +22,7 @@ std::string int128ToString(__int128 val) {
     return s;
 }
 
+// Konwersja string do __int128
 __int128 stringToInt128(const std::string& s) {
     __int128 res = 0;
     __int128 ten = 10;

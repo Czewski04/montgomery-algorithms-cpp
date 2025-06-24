@@ -1,10 +1,4 @@
-//
-// Created by wiktor on 07.05.2025.
-//
-
 #include "BinaryHelper.h"
-
-#include <algorithm>
 #include <vector>
 #include <utility>
 
@@ -53,6 +47,7 @@ std::pair<int, int> subc(int x, int y, int borrow) {
     return {borrow, diff};
 }
 
+// Konwersja liczby całkowitej do binarnej reprezentacji
 std::vector<int> intToBin(__int128 n) {
     std::vector<int> binaryVector;
     if (n == 0) {
@@ -66,6 +61,7 @@ std::vector<int> intToBin(__int128 n) {
     return binaryVector;
 }
 
+// Wypełnianie wektora binarnego zerami do określonej długości
 std::vector<int> fillBinary(std::vector<int> n, int s) {
     if (n.size() < s) {
         int zerosToAdd = s - n.size();
